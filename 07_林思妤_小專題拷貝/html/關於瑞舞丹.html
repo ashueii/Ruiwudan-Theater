@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/about.css">
+
+    <script defer src="../js/home.js"></script>
+    <script defer src="/../js/about.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+     <!-- google翻譯 -->
+     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+
+<body>
+     <input type="checkbox" id="menu_control">
+  
+    <div class="full-screen"></div>
+    <section class="header-bars">
+    <div id="google_translate_element">
+      <button onclick="closeLanguage()" >
+        <i class="bi bi-x-circle-fill"></i> 
+        關閉翻譯</button>
+    </div>
+    <div class="header" id="home">
+      
+      <a href="首頁.html" class="logo"><img src="../logo/logo-1.png" id="a"></a>
+     
+        <nav class="header-right" di="a" >
+            <a href="#">關於瑞舞丹</a>
+            <a href="首頁.html">首頁</a>
+            <a href="#">電影時刻</a>
+            <a href="#">影人說說</a>
+            <a href="#">影痴小店</a>
+            <div class="sub-header-right">
+              <a href="https://www.facebook.com/profile.php?id=100064129231477" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-person-fill"></i></a>
+              <a href="#"><i class="bi bi-cart-fill"></i></a>
+              <a href="#" id="language_btn" onclick="language_btn()">
+                <i class="bi bi-translate"></i>
+              </a>
+          </div>
+        </nav>
+        <label for="menu_control" class="menu_btn"><i class="bi bi-list" style="padding: 7px 10px;border-radius: 50px;font-size: 20px;background-color: rgb(240, 240, 240);"></i></label>
+    </div>
+  
+  
+    
+    <div class="cover-screen" id="coverScreen">
+      <div class="language">
+          <h4>網頁將開啟顯示自動翻譯結果</h4>
+          <p>網站採用Google翻譯功能，翻譯內容可能與中文原文有所差異，僅供參考使用。<br>
+              You are about to open Google web translation, the information is primarily in Chinese. If there are errors when translating into other languages, it’s provided for reference only.</p>
+          <button onclick="CANCEL_btn()">取消 CANCEL</button>
+          <button onclick="OK_btn()">確認 OK</button>
+            
+      
+      </div>
+  </div>
+  
+    </section> 
+
+    <div id="progress-bar" ></div>
+    <div class="content" id="up">
+        <!---------------這裡放你的網頁內容 ------------------>
+        
+        <div class="box" ><img class="cover-fit" src="https://www.twreporter.org/images/20170123140703-e174e2d7d0c7e9a670a4d890d29473b3-desktop.jpg" alt=""></div>
+        <div class="section">
+          
+          <div class="wrap">
+            <h1>找回檜木觀眾座椅上的餘溫──花蓮瑞舞丹大戲院</h1>
+            <p>早期的電影院與戲院，幾乎都是規模800到1,000多席的大廳，相較於現在300席或是隔成更小的電影院，如今應該已很難想像與千人一起在黑暗裡看著大螢幕，同哭同笑的感覺。</p>
+            <p>在花蓮縣富里鄉永安街106號，現存著一間「瑞舞丹大戲院」。從1963年木工師傅做好佇立至今，外觀沒有華麗的建築語彙，裡頭井然排好檜木長條座椅，是現今台灣難得一見的風景。
+
+              台灣現存的老戲院，座椅多半被拆除破壞，而瑞舞丹大戲院的觀眾座椅，還原汁原味的被鎖在這個曾被遺忘20多年的空間裡。曾經，這裡也有成千上萬人的觀眾，在這裡留下笑聲與眼淚。
+              
+              「我回來富里打開這戲院門窗，經常就是隨便挑一個座位，坐在長條椅子上，看著白色螢幕發呆，或是想想接著還可以做些什麼。」戲院第四代主人陳威僑這麼說著。
+            </p>
+
+            <div class="img_box">
+              <div class="box2" ><img class="cover-fit" src="https://www.twreporter.org/images/20170123141034-ced9c3686d6ceb6dc3574fa02491d6f8-desktop.jpg" alt=""></div>
+              <pre><i class="bi bi-bookmark-fill"></i> 陳威僑示範放映室的捲片器。</pre>
+            </div>
+           
+           
+            <h2>祖孫放映的記憶成了返鄉的動力</h2>
+            <p>
+              現年38歲的陳威僑，自2014年開始，時常往返富里與高雄。
+              <br><br>
+              「2011年以前，我對這戲院沒有感覺，只知道這就是我家。2011年開始，才發現原來那裡是『戲院』，可以跟政府申請補助費用。因為那年鎮公所發公文，說戲院二樓逃生梯的位置，佔用馬路用地。1962年蓋的，2011年才發公文。但我知道這件事的時候，家中長輩已先處理，逃生梯拆了，外牆拉皮。不過後來客委會說要拿錢修戲院。」
+            </p>
+
+            <div class="img_box">
+              <div class="box2" ><img class="cover-fit" src="https://www.twreporter.org/images/20170123142430-30dcf3e8bcc236605adc06f5abe0cd51-desktop.jpg" alt=""></div>
+              <pre><i class="bi bi-bookmark-fill"></i> 瑞舞丹大戲院1968年的影劇片表內頁紀錄拷貝片單與戲院輪放的順序。</pre>
+            </div>
+
+
+
+
+
+          </div>
+
+         <div class="form">
+          <h2>  電影の許願池 <i class="bi bi-magic "></i></h2>
+            <p class="item2">
+              <label for="name">怎麼稱呼你呢？</label>
+              <input type="text" id="name" name="name" required>
+              <input  type="submit" value="OK" class="submit" onclick="OK()">
+            </p>
+            <br>
+            <h4 id="yourname"></h4>
+
+
+            <form id="wishForm">
+              <div class="item animate__animated animate__slideInUp" id="like" >
+            
+                <label for="movie_tc">電影中文名稱：</label>
+                <input type="text" id="movie_tc" value="九龍城寨之圍城" required>
+                &nbsp;&nbsp;
+                <label for="movie_en">電影英文名稱：</label>
+                <input type="text" id="movie_en"  value="Twilight of the Warriors: Walled In" required>
+                <br><br>
+                <label for="movie_tm">上映時間：</label>
+                <input type="date" id="movie_tm" required >
+                <br><br>
+                <label for="myword">為什麼想要分享這部電影給大家呢？</label><br>
+                <textarea type="text" id="myword" rows="5" cols="20" required >武打動作超帥的！</textarea>
+                <br><br>
+                <input value="完成" type="submit" class="submit" onclick="Finish()"><br>
+                <h4 id="apple"></h4>
+
+              </div>
+            </form>
+          
+         </div>
+
+        </div>
+
+
+
+
+
+       
+    
+    </div>
+
+    <footer>
+          
+      <a href="#up" class="top_btn">
+        <br>
+        &nbsp;<i class="bi bi-arrow-bar-up"></i>&nbsp;
+        <br>
+        <br>TOP
+      </a>
+
+       <a href="https://maps.app.goo.gl/NjkivPMri1BnixNf7">
+        <!-- <i class="bi bi-house-fill"></i> -->
+        ADD:&nbsp;&nbsp;983花蓮縣富里鄉永安街106之6號
+      </a>
+      <br>
+      <a href="tel:+886-952369500">
+        <!-- <i class="bi bi-telephone-fill"></i> -->
+        TEL:&nbsp;&nbsp;0952-369-500
+      </a>
+      <!-- <hr> -->
+      <pre>瑞舞丹大戲院 Copyright © 2024 as.</pre>
+
+      
+    </footer>
+    
+    
+    
+</body>
+    
+</html>
