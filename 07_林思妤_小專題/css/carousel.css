@@ -1,0 +1,187 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+a:hover {
+  color: #e73700;
+}
+
+button {
+  outline: none !important;
+}
+/******* Common Element CSS End *********/
+
+/******* Middle section CSS Start ******/
+/* -------- Landing page ------- */
+.game-section {
+  /* margin-top: 50px; */
+  position: relative;
+  width: 100%;
+}
+.game-section .owl-stage {
+  margin: 10px 0;
+  display: flex;
+  
+ 
+}
+.game-section .item {
+  margin: 0 7px 0px;
+  width: 540px;
+  height: 340px;
+  display: flex;
+  align-items: flex-end;
+  background: #343434 no-repeat center center  / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 100px;
+  top:90px;
+ 
+  
+}
+
+.game-section .owl-theme.custom-carousel .owl-dots {
+  margin-top: -20px;
+  width: 100%;
+  position: absolute; 
+  top:85% ;
+  z-index: 5;
+}
+.prev-btn{
+  position: absolute;
+  bottom: 70px;
+  padding: 0px 2px;
+  left: 2vw;
+  z-index: 1;
+  border: none;
+  font-size: 30px;
+  border-radius: 50px;
+  background: white;
+
+  box-shadow: 0px 0px 20px 2px #a3a2a24a;
+}
+
+.prev-btn:hover{
+  opacity: 0.8;
+}
+
+.prev-btn:hover i{
+  color: rgb(241, 63, 63);
+}
+
+.next-btn{
+  position: absolute;
+  bottom: 70px;
+  padding: 0px 2px;
+  right: 1vw;
+  z-index: 1;
+  border: none;
+  font-size: 30px;
+  border-radius: 50px;
+  background: white;
+
+  box-shadow: 0px 0px 20px 2px #a3a2a24a;
+}
+
+.next-btn:hover{
+  opacity: 0.8;
+}
+
+.next-btn:hover i{
+  color: rgb(241, 63, 63);
+}
+
+
+你可以使用 CSS 自訂 .owl-dots 的樣式來改變它們的顏色。以下是一些基本步驟，說明如何修改 Owl Carousel 的點點導航（dots）的顏色。
+
+首先，確保你已經載入了 Owl Carousel 的 CSS 文件。然後，你可以在你的 CSS 文件中加入以下樣式：
+
+css
+複製程式碼
+
+修改點點導航的背景色
+.owl-dots .owl-dot span{
+  background-color: white !important; 
+}
+
+/* 修改點點導航在活動狀態時的背景色 */
+.owl-dots .owl-dot.active span,
+.owl-dots .owl-dot:hover span {
+  background-color:white !important; 
+}
+
+
+
+
+/******** Middle section CSS End *******/
+
+/***** responsive css Start ******/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 20px 0px;
+  }
+  .game-section .item {
+    margin: -20px 8px 80px;
+    width: 530px;
+    height: 300px;
+  }
+  
+  /* .game-section .item-desc {
+    transform: translateY(calc(100% - 46px));
+    -webkit-transform: translateY(calc(100% - 46px));
+  } */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 20px 0px;
+  }
+  .game-section .item {
+    margin: -20px 8px 80px;
+    width: 540px;
+    height: 300px;
+  }
+  
+  /* .game-section .item-desc {
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  } */
+} 
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 20px 0px;
+  }
+  .game-section .item {
+    margin: -20px 6px 80px;
+    width: 540px;
+    height: 300px;
+  }
+
+  .prev-btn,.next-btn{
+    display: none;
+  }
+ 
+  .game-section .owl-theme.custom-carousel .owl-dots {
+    /* margin-top: -30px; */
+    width: 100%;
+    top:90% ;
+    z-index: 5;
+  }
+}
