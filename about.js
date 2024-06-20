@@ -1,5 +1,5 @@
 // javascript
-// 複製程式碼
+// 閱讀進度條
 window.addEventListener('scroll', function() {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
